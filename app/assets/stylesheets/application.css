@@ -14,7 +14,7 @@
 
 /**/
 body{
-	padding-top: 60px;
+	padding-top: 50px;
 	padding-bottom: 60px;
 }
 .test{
@@ -24,4 +24,8 @@ body{
 .butt{
 
 	padding-right: 30px !important;
+}
+
+.alert{
+	margin-top: 10px;
 }

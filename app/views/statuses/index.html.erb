@@ -25,8 +25,8 @@
 <%end%>
 
 <%if user_session%>
-  <%= link_to "Post a New Status", new_status_path, class: "btn btn-success" %>
+  <br><%= link_to "Post a New Status", new_status_path, class: "btn btn-success" %>
 <%else%>
-  Don't have a Treebook account? <%=link_to "Registrer", new_user_registration_path, class: "btn"%><br><br>
+  <br>Don't have a Treebook account? <%=link_to "Registrer", new_user_registration_path, class: "btn"%><br><br>
   Already have a Treebook account? <%=link_to "Log in", new_user_session_path, class: "btn btn-success"%>
 <%end%>
