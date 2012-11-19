@@ -34,12 +34,7 @@ class StatusesController < ApplicationController
 
   # GET /statuses/1/edit
   def edit
-    if user_signed_in?
-        @status = Status.find(params[:id])
-    else
-        format.html {redirect_to statuses_url,
-          notice: 'Sorry, you can not edit this status. log in first' }
-    end
+    @status = Status.find(params[:id])
   end
 
   # POST /statuses
